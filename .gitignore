@@ -1,0 +1,70 @@
+--- Python ---
+
+pycache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+--- Ambientes Virtuais ---
+
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+--- VS Code ---
+
+.vscode/
+*.code-workspace
+
+--- PyInstaller (Seu caso específico) ---
+
+Ignoramos build e dist porque são gerados automaticamente
+
+build/
+dist/
+
+O arquivo .spec pode ser mantido se você alterou as configurações de build manualmente
+
+Buscador de Comentarios.spec
+
+--- Playwright ---
+
+Ignora navegadores baixados localmente e logs de teste
+
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+--- Logs e Banco de Dados ---
+
+*.log
+*.sqlite
+
+--- Arquivos de Saída (Docs gerados) ---
+
+Se o seu buscador gera arquivos .docx que você não quer versionar:
+
+.docx
+!src/templates/.docx  # Mantém os templates se existirem
